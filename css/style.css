@@ -11,7 +11,7 @@
     font-family: nastalig !important;
   }
   body{
-    background-color: #281732;
+    background-color: var(--light-pink);
   }
 a{
     text-decoration: none;
@@ -25,10 +25,11 @@ a{
     --white: #fff;
     --light-bg: #f3efec;
     --dark-bg: rgba(0, 0, 0, .7);
-    --dark-purple: #5f1159 ;
+    --dark-purple: #8b1381 ;
     --pomp-and-power: #baadc2;
-    --border: 0.2rem solid #8a6d46;
+    --border: 0.2rem solid #8b1381;
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --light-pink: #f7e6df;
 }
 /* .welcome{
     background-color:var(--pomp-and-power) ;
@@ -44,20 +45,20 @@ a{
 .left-side .welcome-title{
     margin-top: 9rem;
     font-family: nastalig !important;
-    color: var(--primary-color);
+    color: var(--dark-purple);
 }
 
 .left-side p{
     font-size: 5rem;
     font-family: nastalig !important;
-    color: var(--primary-color);
+    color: var(--dark-purple);
 }
 
 .left-side span{
     font-size: 8rem;
     margin-right: 18rem;
     font-family: nastalig !important;
-    color: var(--primary-color);
+    color: var(--dark-purple);
 }
 
 * {
@@ -98,7 +99,7 @@ section {
 
 .heading {
     text-align: center;
-    color: var(--white);
+    color: var(--dark-purple);
     text-transform: capitalize;
     margin-bottom: 3rem;
     font-size: 4rem;
@@ -108,8 +109,8 @@ section {
 .btn {
     margin-top: 1rem;
     display: inline-block;
-    background: linear-gradient(120deg, var(--primary-color) 40%, var(--white) 100%);
-    color: var(--white);
+    background: var(--white);
+    color: var(--dark-purple);
     font-size: 2rem;
     cursor: pointer;
     padding: 1rem 3rem;
@@ -132,14 +133,14 @@ section {
     top: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(rgba(138,109,70,.3), rgba(138,109,70,.5));
+    background: linear-gradient(rgb(255, 255, 255,.3), rgb(255, 255, 255,.5));
     z-index: 1000;
 }
 
 .header .logo {
     font-size: 2.5rem;
     font-weight: bolder;
-    color: var(--white);
+    color: var(--dark-purple);
     text-transform: capitalize;
 }
 
@@ -149,14 +150,14 @@ section {
     right: 2rem;
     font-size: 4rem;
     cursor: pointer;
-    color: var(--white);
+    color: var(--dark-purple);
     display: none;
 }
 
 .header .navbar a {
     font-size: 2rem;
     margin-left: 2rem;
-    color: var(--white);
+    color: var(--dark-purple);
     text-transform: capitalize;
 }
 
@@ -194,12 +195,12 @@ section {
     font-size: 3rem;
     letter-spacing: .5rem;
     padding-bottom: .5rem;
-    color: var(--white);
+    color: var(--dark-purple);
     text-transform: uppercase;
 }
 
 .home .content h3 {
-    color: var(--white);
+    color: var(--dark-purple);
     font-size: 8rem;
     line-height: 8rem;
     font-weight: 900;
@@ -235,12 +236,12 @@ section {
 
 .about .row .content h3 {
     font-size: 3rem;
-    color: var(--white);
+    color: var(--dark-purple);
 }
 
 .about .row .content p {
     font-size: 1.6rem;
-    color: var(--white);
+    color: var(--dark-purple);
     padding: 1rem 0;
     line-height: 1.8;
 }
@@ -367,14 +368,14 @@ section {
 
 .styles .box-container .box .content .title {
     font-size: 2.5rem;
-    color: var(--white);
+    color: var(--dark-purple);
     text-transform: capitalize;
 }
 
 .styles .box-container .box .content p {
     font-size: 1.6rem;
     line-height: 1.8;
-    color: var(--white);
+    color: var(--dark-purple);
     padding: 1rem 0;
 }
 
@@ -400,11 +401,11 @@ section {
     width: 300px;
     margin: 20px 40px;
     border-radius: 10px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, .9);
+    box-shadow: 0 3px 5px rgba(52, 52, 52, 0.5);
     text-align: center;
     overflow: hidden;
     position: relative;
-    background: var(--primary-color);
+    background: var(--white);
 }
 
 .pricing .box-container .box::before,
@@ -418,13 +419,13 @@ section {
 }
 
 .pricing .box-container .box::before {
-    background: linear-gradient(120deg, var(--white) 40%, var(--white) 100%);
+    background: linear-gradient(120deg, var(--light-pink) 40%, var(--white) 100%);
     top: -10%;
     left: 80%;
 }
 
 .pricing .box-container .box::after {
-    background: linear-gradient(120deg, var(--white) 40%, var(--primary-color) 100%);
+    background: linear-gradient(120deg, var(--light-pink) 40%, var(--light-pink) 100%);
     bottom: -10%;
     right: 80%;
 }
@@ -432,15 +433,15 @@ section {
 .pricing .box-container .box .title {
     margin: 30px 0;
     font-size: 26px;
-    color: var(--white);
+    color: var(--dark-purple);
     text-transform: capitalize;
 }
 
 .pricing .box-container .box .price {
     height: 160px;
     width: 160px;
-    color: var(--white);
-    background: linear-gradient(120deg, var(--primary-color) 40%, var(--white) 100%);
+    color: var(--dark-purple);
+    background: linear-gradient(120deg, var(--light-pink) 40%, var(--white) 60%);
     padding: 57px 0 0;
     margin: 0 auto 25px;
     border-radius: 50%;
@@ -463,13 +464,13 @@ section {
     font-size: 16px;
     padding-left: 45px;
     margin: 20px auto;
-    color: var(--white);
+    color: var(--dark-purple);
     list-style: none;
     text-transform: uppercase;
 }
 
 .pricing .box-container .box ul li i {
-    color: var(--white);
+    color: var(--dark-purple);
     padding: 0 10px;
 }
 
@@ -481,8 +482,8 @@ section {
     text-transform: capitalize;
     cursor: pointer;
     background: none;
-    color: var(--white);
-    border: 2px solid var(--white);
+    color: var(--dark-purple);
+    border: 2px solid var(--dark-purple);
     font-size: 17px;
     font-weight: bold;
     transition: .2s linear;
@@ -508,7 +509,7 @@ section {
 }
 
 .blogs .box-container .box {
-    background: var(--primary-color);
+    background: var(--white);
     border-radius: 13px;
 }
 
@@ -536,7 +537,7 @@ section {
 .blogs .box-container .box .content .title {
     font-size: 2.5rem;
     line-height: 1.5;
-    color: var(--white);
+    color: var(--dark-purple);
 }
 
 .blogs .box-container .box .content .title:hover {
@@ -544,7 +545,7 @@ section {
 }
 
 .blogs .box-container .box .content span {
-    color: var(--white);
+    color: var(--dark-purple);
     display: block;
     padding-top: 1rem;
     font-size: 2rem;
@@ -554,12 +555,12 @@ section {
 .blogs .box-container .box .content p {
     font-size: 1.6rem;
     line-height: 1.8;
-    color: var(--white);
+    color: var(--dark-purple);
     padding: 1rem 0;
 }
 
 #booking{
-    color: var(--white);
+    color: var(--dark-purple);
 }
 
 /* blog */
@@ -602,7 +603,7 @@ section {
 .visit .row form h3 {
     font-size: 2.5rem;
     text-align: center;
-    color: var(--white);
+    color: var(--dark-purple);
     padding-bottom: 1rem;
     text-transform: uppercase;
 }
@@ -653,20 +654,20 @@ section {
 .review .box-container .box p {
     font-size: 1.5rem;
     line-height: 1.8;
-    color: var(--white);
+    color: var(--dark-purple);
     padding: 2rem 0;
 }
 
 .review .box-container .box h3 {
     padding: 1rem 0;
     font-size: 2rem;
-    color: var(--white);
+    color: var(--dark-purple);
     text-transform: capitalize;
 }
 
 .review .box-container .box .stars i {
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: var(--dark-purple);
 }
 
 /* review end */
@@ -686,14 +687,14 @@ section {
 .footer .box-container .box h3 {
     font-size: 2.2rem;
     text-transform: capitalize;
-    color: var(--white);
+    color: var(--dark-purple);
     padding: 1rem 0;
 }
 
 .footer .box-container .box p {
     font-size: 1.5rem;
     line-height: 2;
-    color: var(--white);
+    color: var(--dark-purple);
     padding: 1rem 0;
 }
 
@@ -707,7 +708,7 @@ section {
     line-height: 4.5rem;
     border-radius: 50%;
     font-size: 1.7rem;
-    background: linear-gradient(120deg, var(--primary-color) 40%, var(--white) 100%);
+    background: linear-gradient(120deg, var(--dark-purple) 40%, var(--white) 100%);
     color: var(--white);
     margin-right: .3rem;
     text-align: center;
@@ -720,7 +721,7 @@ section {
 .footer .box-container .box .link {
     font-size: 1.7rem;
     line-height: 2;
-    color: var(--white);
+    color: var(--dark-purple);
     padding: .5rem 0;
     display: block;
     text-decoration: underline;
@@ -750,7 +751,7 @@ section {
 }
 
 .footer .credit span {
-    color: var(--white);
+    color: var(--dark-purple);
 }
 
 
